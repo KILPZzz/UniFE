@@ -1,0 +1,79 @@
+plugins {
+    id 'dev.architectury.loom' version '1.11-SNAPSHOT'
+    id 'maven-publish'
+}
+
+group = project.maven_group
+version = project.mod_version
+
+base {
+    archivesName = project.archives_name
+}
+
+loom {
+    silentMojangMappingsLicense()
+
+    forge {
+        mixinConfig 'unife.mixin.json'
+    }
+}
+
+repositories {
+    maven { url = "https://maven.createmod.net" } // Create, Ponder, Flywheel
+    maven { url = "https://maven.tterrag.com" }   // Registrate
+    maven {url 'https://www.cursemaven.com'
+    content { includeGroup "curse.maven"
+    }
+    }
+}
+
+dependencies {
+    minecraft "net.minecraft:minecraft:$project.minecraft_version"
+    mappings loom.officialMojangMappings()
+    forge "net.minecraftforge:forge:$project.forge_version"
+
+    modImplementation("com.simibubi.create:create-${minecraft_version}:${create_version}:slim") { transitive = false }
+    modImplementation("net.createmod.ponder:Ponder-Forge-${minecraft_version}:${ponder_version}")
+    modCompileOnly("dev.engine-room.flywheel:flywheel-forge-api-${minecraft_version}:${flywheel_version}")
+    modRuntimeOnly ("dev.engine-room.flywheel:flywheel-forge-${minecraft_version}:${flywheel_version}")
+    modImplementation("com.tterrag.registrate:Registrate:${registrate_version}")
+
+    modImplementation("curse.maven:createutilities-881586:6701786")
+    modImplementation("curse.maven:immersive-engineering-231951:6206989")
+
+    modImplementation("curse.maven:roughly-enough-items-310111:5846923")
+    modImplementation("curse.maven:cloth-config-348521:5729105")
+
+    modImplementation("curse.maven:architectury-api-419699:5137938")
+    modImplementation("curse.maven:power-grid-1321420:7714613")
+
+    implementation(include("io.github.llamalad7:mixinextras-forge:${mixin_extras_version}"))
+    // sem o annotationProcessor do sponge aqui
+}
+
+processResources {
+    inputs.property 'version', project.version
+
+    filesMatching('META-INF/mods.toml') {
+        expand version: inputs.properties.version
+    }
+}
+
+java {
+    withSourcesJar()
+
+    sourceCompatibility = JavaVersion.VERSION_17
+    targetCompatibility = JavaVersion.VERSION_17
+}
+
+tasks.withType(JavaCompile).configureEach {
+    it.options.release = 17
+}
+
+publishing {
+    publications {
+        mavenJava(MavenPublication) {
+            from components.java
+        }
+    }
+}

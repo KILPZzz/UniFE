@@ -1,0 +1,58 @@
+modLoader = "javafml"
+loaderVersion = "[47,)"
+#issueTrackerURL = ""
+license = "Insert License Here"
+
+[[mods]]
+modId = "unife"
+version = "${version}"
+displayName = "UniFE"
+authors = "FrostybadHalo"
+description = '''
+UniFE bridges Forge Energy sources with Create: Power Grid electrical networks.
+'''
+logoFile = "icon.png"
+
+[[dependencies.unife]]
+modId = "forge"
+mandatory = true
+versionRange = "[47,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.unife]]
+modId = "minecraft"
+mandatory = true
+versionRange = "[1.20.1,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.unife]]
+modId = "powergrid"
+mandatory = true
+versionRange = "[0.5,)"
+ordering = "AFTER"
+side = "BOTH"
+
+
+
+[[dependencies.unife]]
+modId = "immersiveengineering"
+mandatory = false
+versionRange = "[1.20.1-10,)"
+ordering = "AFTER"
+side = "BOTH"
+
+[[dependencies.unife]]
+modId = "createutilities"
+mandatory = false
+versionRange = "[0.3,)"
+ordering = "AFTER"
+side = "BOTH"
+
+[[dependencies.unife]]
+modId = "create"
+mandatory = false
+versionRange = "[0.5,)"
+ordering = "AFTER"
+side = "BOTH"

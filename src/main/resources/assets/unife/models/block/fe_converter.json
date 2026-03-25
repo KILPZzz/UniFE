@@ -1,0 +1,79 @@
+{
+	"credit": "Made with Blockbench",
+	"parent": "block/block",
+	"texture_size": [64, 64],
+	"textures": {
+		"1": "unife:block/fe_converter_tex",
+		"particle": "unife:block/fe_converter_tex"
+	},
+	"elements": [
+		{
+			"from": [0, 0, 0],
+			"to": [16, 16, 16],
+			"faces": {
+				"north": {"uv": [4, 12, 8, 16], "texture": "#1"},
+				"east": {"uv": [0, 12, 4, 16], "texture": "#1"},
+				"south": {"uv": [12, 12, 16, 16], "texture": "#1"},
+				"west": {"uv": [8, 12, 12, 16], "texture": "#1"},
+				"up": {"uv": [8, 12, 4, 8], "texture": "#1"},
+				"down": {"uv": [12, 8, 8, 12], "texture": "#1"}
+			}
+		},
+		{
+			"name": "connector_n",
+			"from": [1, 16, 1],
+			"to": [3, 17, 3],
+			"rotation": {"angle": 0, "axis": "y", "origin": [0, 16, 0]},
+			"faces": {
+				"north": {"uv": [6.5, 7, 7, 7.25], "texture": "#1"},
+				"east": {"uv": [6, 7, 6.5, 7.25], "texture": "#1"},
+				"south": {"uv": [7.5, 7, 8, 7.25], "texture": "#1"},
+				"west": {"uv": [7, 7, 7.5, 7.25], "texture": "#1"},
+				"up": {"uv": [7, 7, 6.5, 6.5], "texture": "#1"},
+				"down": {"uv": [7.5, 6.5, 7, 7], "texture": "#1"}
+			}
+		},
+		{
+			"name": "connector_p",
+			"from": [1, 16, 13],
+			"to": [3, 17, 15],
+			"rotation": {"angle": 0, "axis": "y", "origin": [0, 16, 12]},
+			"faces": {
+				"north": {"uv": [6.5, 7.75, 7, 8], "texture": "#1"},
+				"east": {"uv": [6, 7.75, 6.5, 8], "texture": "#1"},
+				"south": {"uv": [7.5, 7.75, 8, 8], "texture": "#1"},
+				"west": {"uv": [7, 7.75, 7.5, 8], "texture": "#1"},
+				"up": {"uv": [7, 7.75, 6.5, 7.25], "texture": "#1"},
+				"down": {"uv": [7.5, 7.25, 7, 7.75], "texture": "#1"}
+			}
+		},
+		{
+			"name": "connector_n",
+			"from": [13, 16, 13],
+			"to": [15, 17, 15],
+			"rotation": {"angle": 0, "axis": "y", "origin": [12, 16, 12]},
+			"faces": {
+				"north": {"uv": [6.5, 7, 7, 7.25], "texture": "#1"},
+				"east": {"uv": [6, 7, 6.5, 7.25], "texture": "#1"},
+				"south": {"uv": [7.5, 7, 8, 7.25], "texture": "#1"},
+				"west": {"uv": [7, 7, 7.5, 7.25], "texture": "#1"},
+				"up": {"uv": [7, 7, 6.5, 6.5], "texture": "#1"},
+				"down": {"uv": [7.5, 6.5, 7, 7], "texture": "#1"}
+			}
+		},
+		{
+			"name": "connector_p",
+			"from": [13, 16, 1],
+			"to": [15, 17, 3],
+			"rotation": {"angle": 0, "axis": "y", "origin": [12, 16, 0]},
+			"faces": {
+				"north": {"uv": [6.5, 7.75, 7, 8], "texture": "#1"},
+				"east": {"uv": [6, 7.75, 6.5, 8], "texture": "#1"},
+				"south": {"uv": [7.5, 7.75, 8, 8], "texture": "#1"},
+				"west": {"uv": [7, 7.75, 7.5, 8], "texture": "#1"},
+				"up": {"uv": [7, 7.75, 6.5, 7.25], "texture": "#1"},
+				"down": {"uv": [7.5, 7.25, 7, 7.75], "texture": "#1"}
+			}
+		}
+	]
+}
