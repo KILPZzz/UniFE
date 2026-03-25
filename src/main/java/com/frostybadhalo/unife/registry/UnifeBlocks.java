@@ -17,7 +17,7 @@ public class UnifeBlocks {
                     BlockBehaviour.Properties.of()
                             .mapColor(MapColor.METAL)
                             .strength(3.0f, 6.0f)
-                            .sound(SoundType.METAL)
+                            .sound(SoundType.WOOD)
                             .noOcclusion()
                             .explosionResistance(500.0f)
                             .requiresCorrectToolForDrops()

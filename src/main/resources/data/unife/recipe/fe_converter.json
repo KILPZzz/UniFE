@@ -1,5 +1,6 @@
 {
   "type": "minecraft:crafting_shaped",
+  "category": "misc",
   "pattern": [
     "LNL",
     "BSB",
@@ -14,7 +15,7 @@
     "A": { "item": "create:andesite_casing" }
   },
   "result": {
-    "item": "unife:fe_converter",
-    "count": 1
+    "count": 1,
+    "id": "unife:fe_converter"
   }
 }

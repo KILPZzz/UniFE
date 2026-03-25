@@ -114,6 +114,9 @@ dependencies {
     implementation "curse.maven:architectury-api-419699:5786327"
     implementation "curse.maven:cloth-config-348521:5729127"
 
+    implementation "curse.maven:jei-238222:7420587"
+    implementation "curse.maven:jade-324717:7545219"
+
 }
 
 var generateModMetadata = tasks.register("generateModMetadata", ProcessResources) {
