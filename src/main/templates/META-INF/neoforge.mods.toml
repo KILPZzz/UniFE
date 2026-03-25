@@ -1,0 +1,62 @@
+
+modLoader="javafml"
+loaderVersion="${loader_version_range}"
+license="${mod_license}"
+
+#issueTrackerURL="https://change.me.to.your.issue.tracker.example.invalid/" #optional
+
+
+[[mods]] #mandatory
+modId="${mod_id}"
+version="${mod_version}"
+displayName="${mod_name}"
+logoFile="icon.png"
+authors="FrostyBadHalo"
+description='''
+UniFE bridges Forge Energy sources with Create: Power Grid electrical networks.
+'''
+
+[[mixins]]
+config="${mod_id}.mixins.json"
+
+#[[accessTransformers]]
+#file="META-INF/accesstransformer.cfg"
+
+
+[[dependencies.${mod_id}]] #optional
+    modId="neoforge" #mandatory
+    type="required" #mandatory
+    versionRange="[${neo_version},)" #mandatory
+    ordering="NONE"
+    side="BOTH"
+
+[[dependencies.${mod_id}]]
+    modId="minecraft"
+    type="required"
+    versionRange="${minecraft_version_range}"
+    ordering="NONE"
+    side="BOTH"
+
+#[features.${mod_id}]
+#openGLVersion="[3.2,)"
+
+[[dependencies.${mod_id}]]
+modId="create"
+type="required"
+versionRange="[6.0.9,6.1.0)"
+ordering="NONE"
+side="BOTH"
+
+[[dependencies.unife]]
+modId = "powergrid"
+type = "required"
+versionRange = "[0.5.4,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.unife]]
+modId = "immersiveengineering"
+type = "optional"
+versionRange = "[1.0,)"
+ordering = "NONE"
+side = "BOTH"

@@ -1,0 +1,17 @@
+{
+  "required": true,
+  "package": "com.frostybadhalo.unife.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "mixins": [
+    "BridgeElectricBehaviourImplMixin",
+    "DeviceConnectorBlockImplMixin",
+    "DeviceConnectorSurviveMixin",
+    "FEBridgeEnergyStorageMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  },
+  "overwrites": {
+    "requireAnnotations": true
+  }
+}

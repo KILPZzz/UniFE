@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "facing=down":  { "model": "unife:block/fe_converter" },
+    "facing=up":    { "model": "unife:block/fe_converter", "x": 180 },
+    "facing=north": { "model": "unife:block/fe_converter", "x": 90 },
+    "facing=south": { "model": "unife:block/fe_converter", "x": 90, "y": 180 },
+    "facing=east":  { "model": "unife:block/fe_converter", "x": 90, "y": 90 },
+    "facing=west":  { "model": "unife:block/fe_converter", "x": 90, "y": 270 }
+  }
+}
