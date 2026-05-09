@@ -14,7 +14,6 @@ public class UnifeMod {
     public UnifeMod() {
         IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
 
-
         UnifeBlocks.BLOCKS.register(bus);
         UnifeItems.ITEMS.register(bus);
         UnifeBlockEntities.BLOCK_ENTITIES.register(bus);

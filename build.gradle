@@ -45,7 +45,7 @@ dependencies {
     modImplementation("curse.maven:cloth-config-348521:5729105")
 
     modImplementation("curse.maven:architectury-api-419699:5137938")
-    modImplementation("curse.maven:power-grid-1321420:7714613")
+    modImplementation("curse.maven:power-grid-1321420:7999913")
 
     implementation(include("io.github.llamalad7:mixinextras-forge:${mixin_extras_version}"))
     // sem o annotationProcessor do sponge aqui
