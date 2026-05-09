@@ -124,7 +124,7 @@ public class FEConverterBlockEntity extends ElectricBlockEntity {
         float fillRatio = (float) feBuffer / MAX_BUFFER;
         float targetVoltage = fillRatio * MAX_VOLTAGE;
 
-        float current = Math.abs(voltageSource.getCurrent());
+        float current = (float) Math.abs(voltageSource.getCurrent());
         float wattToFE = IFEBridgeHandler.wattToFE();
         long consumed = (long)(current * current * INTERNAL_RESISTANCE * wattToFE);
         feBuffer = Math.max(0, feBuffer - consumed);

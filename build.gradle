@@ -109,7 +109,7 @@ dependencies {
     implementation("com.tterrag.registrate:Registrate:${registrate_version}")
 
     implementation "curse.maven:immersive-engineering-231951:6733669"
-    implementation "curse.maven:power-grid-1321420:7714634"
+    implementation "curse.maven:power-grid-1321420:7999916"
 
     implementation "curse.maven:architectury-api-419699:5786327"
     implementation "curse.maven:cloth-config-348521:5729127"
