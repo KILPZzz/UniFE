@@ -1,6 +1,7 @@
 # Project exclude paths
 /.gradle/
 /build/
+/.idea/
 /build/classes/java/main/
 /.idea/libraries/Gradle__com_electronwill_night_config_core_3_6_4.xml
 /.idea/libraries/Gradle__com_electronwill_night_config_toml_3_6_4.xml
